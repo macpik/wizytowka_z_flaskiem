@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% block head %}
+        <title>o mnie</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        {% endblock %}
+    </head>
+    <body>
+        <h1>Witaj na mojej stronie domowej</h1>
+        <img src="{{url_for('static', filename='logo.jpg')}}" />
+        <div id ="content">{% block content %}{% endblock %}</div>
+{% block paragraph %}
+        <p><strong>imie:</strong>Maciej</p>
+        <p><strong>nazwisko:</strong>Pikula</p>
+    </body>
+</html>
+{% endblock %}

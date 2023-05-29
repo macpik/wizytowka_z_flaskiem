@@ -1,0 +1,16 @@
+{% extends "parent.html" %}
+{% block content %}
+<h1>Kontakt</h1>
+         <ul>
+            <li>email: xxx@gmail.com</li>
+            <li>telefon: 111 222 333</li>
+        </ul>
+         <h3>Wyślij wiadomość</h3>
+         <form action="/contact" method="POST">
+         <input type="text" placeholder="text" method="POST"/>
+        <button>Prześlij</button>
+        </form>
+{% endblock %}
+{% block paragraph %}
+
+{% endblock %}
